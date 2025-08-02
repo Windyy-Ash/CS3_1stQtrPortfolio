@@ -15,3 +15,6 @@ During the SONA 2025, President Marcos talked about many different achievements 
 
 ### One word to the Philippines
 #### Good Luck!
+
+### YT SONA LINK
+[Youtube](http://youtube.com/watch?v=AzoVnp66KqQ)
