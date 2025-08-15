@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Number Guessing Game</title>
+    <script>
+        function checkNumber() {
+            const correctNumber = 42; // Set the specific number to guess
+            const userInput = parseInt(document.getElementById("numberInput").value);
+
+            if (userInput < 10 || userInput > 100) {
+                document.getElementById("result").innerText = "Please enter a number between 10 and 100.";
+            } else if (userInput === correctNumber) {
+                document.getElementById("result").innerText = "Correct! You guessed the number.";
+            } else if (userInput < correctNumber) {
+                document.getElementById("result").innerText = "Incorrect! The correct number is higher.";
+            } else {
+                document.getElementById("result").innerText = "Incorrect! The correct number is lower.";
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Guess the Number</h1>
+    <p>Enter a number between 10 and 100:</p>
+    <input type="number" id="numberInput" placeholder="Enter your guess">
+    <button onclick="checkNumber()">Submit</button>
+    <p id="result"></p>
+</body>
+</html>
