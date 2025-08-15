@@ -14,11 +14,11 @@
         const numPerDay = 2; 
 
         const totalRequired = (numPerDay * 365) * (maxAge - age);
-        document.write = ("Is the input right?:");
-        if(isCorrect) {
-            console.log("You will need " + totalRequired + " French fries to last you until the ripe old age of " + maxAge + ".");
+        const isCorrect = confirm("Is the input correct?");
+        if (isCorrect) {
+            document.write("You will need " + totalRequired + " French fries to last you until the ripe old age of " + maxAge + ".");
         } else {
-            alert("run the code again and check the input values.");
+            alert("Please check your input and try again.");
         }
         
     </script>
