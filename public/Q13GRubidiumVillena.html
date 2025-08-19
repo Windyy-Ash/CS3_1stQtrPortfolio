@@ -1,22 +1,40 @@
-
 <!DOCTYPE html>
 <html>
 <body>
 
-   <h2> Q1 3rd Graded Exercise submitted by name of section</h2>
-   <!-- Enter your HTML tags below  but before the opening script tag -->
+   <h2>Q1 3rd Graded Exercise submitted by Villena, Ashley Karenina from 9-Rubidium</h2>
+    <label for="guess">Guess a number between 1 and 100:</label>
+    <input type="text" id="guess">
+    <button onclick="checkIt()">Check</button> </br>
+    <label for="result">Result: <p id="result"> </p> </label> 
+    
 
     <script>
-
-       var dNumber = Math.floor(Math.random() * 100) + 1; // generates a number from 1  to 100 when the page loads
-
+       var dNumber = Math.floor(Math.random() * 100) + 1; 
         function checkIt() {
-              
+            var userGuess = parseInt(document.getElementById('guess').value);
+            var resultText = "";
+
+            if (isNaN(userGuess) || userGuess < 1 || userGuess > 100) {
+                resultText = "Please enter a valid number between 1 and 100.";
             
-         
+
+            } else if (userGuess === dNumber) {
+                resultText = "Congratulations! You guessed the correct number: " + dNumber;
+            } else if (userGuess < dNumber) {
+                resultText = "Too low! Try again.";
+            } else {
+                resultText = "Too high! Try again.";
+            }
+
+            document.getElementById('result').textContent = resultText;
         }
+        
     </script>
-
+<div classname="reference-container">
+           <p>References: <br/>
+             World Class Tech Ed. (2020, October 1). Code a number guessing game in Javascript [Video]. YouTube. https://www.youtube.com/watch?v=o6hvejKRtUw 
+           </p> 
+    </div>
 </body>
-
 </html>
