@@ -1,24 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-      <head>
-    <style>
-body{
-    background-color: green;
-    display: flex;align-items: center;
-    justify-content: center;
-    margin-top: 100px;
-}
-.botton{
-   font-size: 24px;
-   box-shadow 
-} 
-    </style>
+<head>
+  <meta charset="UTF-8">
+  <title>Button with Background Image</title>
+  <style>
+    .image-button {
+      width: 500px;                  
+      height: 120px;                  
+      border: none;                  
+      cursor: pointer;               
+      background-image: url('../Images/freerobux.jpg'); 
+      background-size: cover;        
+      background-position: center;   
+      border-radius: 12px;           
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3); 
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      margin-left: 35%;
+    }
+
+    .image-button:hover {
+      transform: scale(1.05);        
+      box-shadow: 0 6px 12px rgba(0,0,0,0.4);
+    }
+
+    .image-button:active {
+      transform: scale(0.95);       
+    }
+  </style>
 </head>
 <body>
-   <div class="button">
-     Click me for free robux!
-   </div>
-   
-    </button>
+  <h1>Ashley Karenina Villena from 9-Rubidium</h1>
+  <button class="image-button" >Click Me for Free Robux!</button>
+
 </body>
 </html>
