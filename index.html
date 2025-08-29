@@ -6,33 +6,68 @@
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
   <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./port.css">
+  <style>
+    body {
+      background: #ffc1cc;
+      font-family: 'Quicksand', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .portfolio-container {
+      background: #e6c6fa;
+      padding: 32px 24px;
+      border-radius: 32px;
+      max-width: 800px;
+      margin: 40px auto 32px auto;
+      text-align: center;
+      box-shadow: 0 4px 48px 0 #ffb6c1;
+    }
+    .header-img {
+      max-width: 400px;
+      height: auto;
+      margin-bottom: 16px;
+    }
+    .main-title {
+      font-family: 'Pacifico', cursive;
+      font-size: 2.5em;
+      color: #a020f0;
+      margin-bottom: 16px;
+    }
+    .bubble-list {
+      display: flex;
+      justify-content: center;
+      gap: 24px;
+      margin-top: 32px;
+    }
+    .bubble-btn {
+      background: #ffb6d5;
+      color: #a020f0;
+      border: none;
+      border-radius: 50px;
+      padding: 18px 32px;
+      font-size: 1.1em;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.2s;
+      text-decoration: none;
+      box-shadow: 0 2px 16px #ffb6c1;
+      font-family: 'Quicksand', Arial, sans-serif;
+    }
+    .bubble-btn:hover {
+      background: #ec4899;
+      color: #fff;
+    }
+  </style>
 </head>
 <body>
   <section class="portfolio-container">
     <img src="./Images/portcolors.png" alt="Ashley image" class="header-img">
-    <h1>Ashley's Work To Do!!</h1>
-    <nav>
-      <ul>
-        <li><a href="./public/Q1_1stGraded.html">Ashley Villena's first work exercise!!</a></li>
-      </ul>
-    </nav>
+    <h1 class="main-title">Ashley's Work To Do!!</h1>
+    <div class="bubble-list">
+  <a href="./public/Q1_1stNGRubidiumVillena.html" class="bubble-btn">Q1 1st Non-Graded Exercise</a> 
+  <a href="./public/Q12GRubidiumVillena.html" class="bubble-btn">Second Graded Exercise</a> 
+  <a href="./public/Q13GRubidiumVillena.html" class="bubble-btn">Third Graded Exercise</a>
+</div>
   </section>
-</body>
-</html>
-
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>1stQtrPortfolio</title>
-</head>
-<body>
-    <h1>My 1st Quarter Portfolio</h1>
-    <h2>Non-Graded Exercises</h2>
-    <ul>
-        <li><a href="./public/Q11stNGRubidiumVillena.html">Q1 1st Non-Graded</a></li>
-    </ul>
 </body>
 </html>

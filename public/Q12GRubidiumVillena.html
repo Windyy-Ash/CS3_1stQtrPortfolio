@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+    <h2>Q1 2nd Graded Exercise submitted by name of section</h2>
+    <label for="mp">Meal Price:</label>
+    <input type="text" id="mp"><br/>
+    <label for="tip">Tip:</label>
+    <input type="text" id="tip"><br/>
+    <label for="sc">Service Charge (%sc):</label>
+    <input type="text" id="sc"><br/>
+
+    <label>Result:</label>
+    <span id="result"></span><br>
+    <button onclick="totalMeal()">Accept Input</button>
+
+    <script>
+        function totalMeal() {
+            const mp = parseFloat(document.getElementById('mp').value);
+            const tip = parseFloat(document.getElementById('tip').value);
+            const sc = parseFloat(document.getElementById('sc').value);
+
+            const totalCost = mp + tip + (sc / 100 * mp);
+
+            document.getElementById('result').textContent = totalCost.toFixed(2);
+        }
+    </script>
+    <div classname="reference-container">
+           <p>References: <br/>
+            Bro Code. (2023, October 15). How to accept JavaScript USER INPUT in 5 minutes 💬 [Video]. YouTube. https://www.youtube.com/watch?v=JeXqaKeJSRI 
+           </p> 
+           <p>
+            Steve Griffith - Prof3ssorSt3v3. (2020, January 10). How to use ParseInt and ParseFloat [Video]. YouTube. https://www.youtube.com/watch?v=OXpTBQtL4nY 
+           </p> 
+    </div>
+</body>
+</html>

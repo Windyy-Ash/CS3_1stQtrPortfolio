@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Button with Background Image</title>
+  <style>
+    body {
+      text-align: center;
+    }
+
+    .image-button {
+      width: 500px;
+      height: 120px;
+      border: none;
+      cursor: pointer;
+      background-image: url('../Images/freerobux.jpg');
+      background-size: cover;
+      background-position: center;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      color: white;
+      display: block;
+      margin: 0 auto;
+      font-family: "Times New Roman", Times, serif;
+      font-size: 30px; 
+      font-weight: bold; 
+      text-shadow: 2px 2px 2px black ;
+    }
+
+    .image-button:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 12px rgba(0,0,0,0.4);
+    }
+
+    .image-button:active {
+      transform: scale(0.95);
+    }
+.bottom-left-text {
+      position: fixed; 
+      bottom: 10px;
+      left: 10px;      
+      color: red;    
+      font-family: "Times New Roman", Times, serif;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Ashley Karenina Villena</h1>
+  <h2>9-Rubidium</h2>
+  <h2>August 26, 2024</h2>
+  <button class="image-button">Click Me for Free Robux!🤑</button>
+  <div class="bottom-left-text">
+    NOTE: This is just a button with a background image. It does not actually give free Robux. It's just for fun! Do NOT click on any suspicious links giving out free Robux.
+  </div>
+</body>
+</html>
