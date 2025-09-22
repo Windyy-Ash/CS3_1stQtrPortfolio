@@ -14,9 +14,7 @@
 * Another one I want to point out, is about the MathRandom. I was able to understand it while making the code, but it feels like I need more practice about it because, I didn't fully grasp it.
 * So far, those are the only topics I really don't really understand much or didn't fully grasp. I can't find anymore topics that I really don't understand. The rest I fully understand and am confident about! ^^ 
 
-
 # Plan of action in order to help myself in understanding further the topics listed on the second items.
-
 I need more practice exercise regarding the topics I don't understand. For me I didn't use arrays in most of my exercises, so I wish to have a required exercises that needs arrays. I also want to have a few more practices about arithmetic oprators and other predefined variables to really help me grasp my understanding about it.
 
 # 3 effective activities I did in class and 3 not effective activites in helping me understand the topics in the course and why.
