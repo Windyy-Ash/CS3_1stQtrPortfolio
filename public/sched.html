@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bubble Style Table with Side Content</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap'); /* Import a custom font */
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap'); 
 
         body {
             font-family: "Times New Roman", Times, serif;
@@ -26,42 +26,42 @@
         }
 
         .container {
-            display: flex; /* Use flexbox to arrange the content horizontally */
+            display: flex; 
             justify-content: center;
             align-items: flex-start;
-            gap: 20px; /* Add space between the table and the side boxes */
+            gap: 20px; 
             margin: 20px;
         }
 
         .bubble-box {
-            width: 20%; /* Set the width of the side boxes */
+            width: 20%; 
             padding: 20px;
-            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
-            border-radius: 20px; /* Rounded corners for the bubble box */
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add a soft shadow for the bubble effect */
+            background-color: rgba(255, 255, 255, 0.8); 
+            border-radius: 20px; 
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
             text-align: center;
         }
 
         .bubble-box img {
-            max-width: 100%; /* Ensure the image fits within the box */
-            border-radius: 10px; /* Add rounded corners to the image */
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow to the image */
+            max-width: 100%; 
+            border-radius: 10px; 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
         }
 
         .bubble-box iframe {
-            width: 100%; /* Make the YouTube video responsive */
+            width: 100%; 
             height: 200px;
-            border-radius: 10px; /* Add rounded corners to the video */
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow to the video */
+            border-radius: 10px; 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
         }
 
         table {
             width: 60%;
-            border-collapse: separate; /* Separate borders for bubble effect */
-            border-spacing: 10px; /* Add spacing between cells */
-            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
-            border-radius: 20px; /* Rounded corners for the table */
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add a soft shadow for the bubble effect */
+            border-collapse: separate; 
+            border-spacing: 10px; 
+            background-color: rgba(255, 255, 255, 0.8); 
+            border-radius: 20px; 
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
             overflow: hidden;
         }
 
@@ -80,13 +80,11 @@
 <body>
     <h1>My Daily Schedule</h1>
     <div class="container">
-        <!-- Left Bubble Box for Image -->
         <div class="bubble-box">
             <h2>A Picture that represents my partner and I</h2>
             <img src="https://upload-os-bbs.hoyolab.com/upload/2021/11/12/124567509/21f03eb672f41010274a70d175906618_1985421685312368641.jpg" alt="Side Image">
         </div>
 
-        <!-- Table -->
         <table>
             <thead>
                 <tr>
@@ -153,8 +151,6 @@
                 </tr>
             </tbody>
         </table>
-
-        <!-- Right Bubble Box for YouTube Video -->
         <div class="bubble-box">
             <h2>Watch This</h2>
             <iframe src="https://youtube.com/embed/VpGxn39lVWU?si=a2araLlelN8yjUyQ" 
