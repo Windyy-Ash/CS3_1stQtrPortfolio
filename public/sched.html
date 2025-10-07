@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bubble Style Table</title>
+    <title>Bubble Style Table with Side Content</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap'); /* Import a custom font */
 
@@ -12,9 +12,10 @@
             background-image: url('https://preview.redd.it/katseye-official-debut-upcoming-releases-announcement-v0-ta27hn0k4d6d1.jpg?width=3840&format=pjpg&auto=webp&s=6a19a8aa611b84d45bc137a9ce51441c8dfc4573'); 
             background-size: cover;
             background-repeat: no-repeat;
+            background-position: center;
             margin: 0;
             padding: 0;
-            color: rgb(68, 0, 255); /* Make all text gold */
+            color: rgb(68, 0, 255);
         }
 
         h1 {
@@ -24,11 +25,40 @@
             font-family: "Times New Roman", Times, serif;
         }
 
+        .container {
+            display: flex; /* Use flexbox to arrange the content horizontally */
+            justify-content: center;
+            align-items: flex-start;
+            gap: 20px; /* Add space between the table and the side boxes */
+            margin: 20px;
+        }
+
+        .bubble-box {
+            width: 20%; /* Set the width of the side boxes */
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+            border-radius: 20px; /* Rounded corners for the bubble box */
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add a soft shadow for the bubble effect */
+            text-align: center;
+        }
+
+        .bubble-box img {
+            max-width: 100%; /* Ensure the image fits within the box */
+            border-radius: 10px; /* Add rounded corners to the image */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow to the image */
+        }
+
+        .bubble-box iframe {
+            width: 100%; /* Make the YouTube video responsive */
+            height: 200px;
+            border-radius: 10px; /* Add rounded corners to the video */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow to the video */
+        }
+
         table {
             width: 60%;
             border-collapse: separate; /* Separate borders for bubble effect */
             border-spacing: 10px; /* Add spacing between cells */
-            margin: 20px auto;
             background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
             border-radius: 20px; /* Rounded corners for the table */
             box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add a soft shadow for the bubble effect */
@@ -36,90 +66,104 @@
         }
 
         th, td {
-            padding: 15px;
+            padding: 10px;
             text-align: center;
-            font-weight: bold; 
-            color: rgb(0, 0, 0); 
-            font-family: "Times New Roman", Times, serif;
-            background-color: rgba(228, 207, 16, 0.9); /* Light yellow background for cells */
-            border-radius: 15px; /* Rounded corners for individual cells */
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a soft shadow to cells */
+            border: 1px solid #ddd;
         }
 
         th {
-            background-color: #e4cf10; /* Bright yellow for header */
-            color: #000; /* Black text for header */
-            font-size: 1.2em;
+            background-color: #e4cf10;
+            color: #000;
         }
     </style>
 </head>
 <body>
-    <h1>Friday's Schedule</h1>
-    <table>
-        <thead>
-            <tr>
-                <th>Time</th>
-                <th>Subject</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>7:30 AM - 8:15 AM</td>
-                <td>English</td>
-            </tr>
-            <tr>
-                <td>8:15 AM - 9:00 AM</td>
-                <td>English</td>
-            </tr>
-            <tr>
-                <td>9:00 AM - 9:10 AM</td>
-                <td>Break</td>
-            </tr>
-            <tr>
-                <td>9:10 AM - 9:55 AM</td>
-                <td>Social Science</td>
-            </tr>
-            <tr>
-                <td>9:55 AM - 10:40 AM</td>
-                <td>Social Science</td>
-            </tr>
-            <tr>
-                <td>10:40 AM - 11:25 AM</td>
-                <td>Mathematics</td>
-            </tr>
-            <tr>
-                <td>11:25 AM - 12:10 PM</td>
-                <td>Mathematics</td>
-            </tr>
-            <tr>
-                <td>12:10 PM - 1:05 PM</td>
-                <td>LUNCH!!</td>
-            </tr>
-            <tr>
-                <td>1:05 PM - 1:50 PM</td>
-                <td>Physics</td>
-            </tr>
-            <tr>
-                <td>1:50 - 2:35 PM</td>
-                <td>Study Period</td>
-            </tr>
-            <tr>
-                <td>2:35 PM - 2:45 PM</td>
-                <td>Break</td>
-            </tr>
-            <tr>
-                <td>2:45 PM - 3:30 PM</td>
-                <td>Study Period</td>
-            </tr>
-            <tr>
-                <td>3:30 PM - 4:15 PM</td>
-                <td>Computer Science</td>
-            </tr>
-            <tr>
-                <td>4:15 PM onwards</td>
-                <td>Dismissal</td>
-            </tr>
-        </tbody>
-    </table>
+    <h1>My Daily Schedule</h1>
+    <div class="container">
+        <!-- Left Bubble Box for Image -->
+        <div class="bubble-box">
+            <h2>A Picture that represents my partner and I</h2>
+            <img src="https://upload-os-bbs.hoyolab.com/upload/2021/11/12/124567509/21f03eb672f41010274a70d175906618_1985421685312368641.jpg" alt="Side Image">
+        </div>
+
+        <!-- Table -->
+        <table>
+            <thead>
+                <tr>
+                    <th>Time</th>
+                    <th>Subject</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>7:30 AM - 8:15 AM</td>
+                    <td>English 🎭</td>
+                </tr>
+                <tr>
+                    <td>8:15 AM - 9:00 AM</td>
+                    <td>English 🎭</td>
+                </tr>
+                <tr>
+                    <td>9:00 AM - 9:10 AM</td>
+                    <td>Break</td>
+                </tr>
+                <tr>
+                    <td>9:10 AM - 9:55 AM</td>
+                    <td>Social Science 🕰️</td>
+                </tr>
+                <tr>
+                    <td>9:55 AM - 10:40 AM</td>
+                    <td>Social Science 🕰️</td>
+                </tr>
+                <tr>
+                    <td>10:40 AM - 11:25 AM</td>
+                    <td>Mathematics 📐</td>
+                </tr>
+                <tr>
+                    <td>11:25 AM - 12:10 PM</td>
+                    <td>Mathematics 📐</td>
+                </tr>
+                <tr>
+                    <td>12:10 PM - 1:05 PM</td>
+                    <td>LUNCH!! 😍</td>
+                </tr>
+                <tr>
+                    <td>1:05 PM - 1:50 PM</td>
+                    <td>Physics 🎯</td>
+                </tr>
+                <tr>
+                    <td>1:50 - 2:35 PM</td>
+                    <td>Study Period ✏️</td>
+                </tr>
+                <tr>
+                    <td>2:35 PM - 2:45 PM</td>
+                    <td>Break</td>
+                </tr>
+                <tr>
+                    <td>2:45 PM - 3:30 PM</td>
+                    <td>Study Period ✏️</td>
+                </tr>
+                <tr>
+                    <td>3:30 PM - 4:15 PM</td>
+                    <td>Computer Science 🖥️</td>
+                </tr>
+                <tr>
+                    <td>4:15 PM onwards</td>
+                    <td>Dismissal</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Right Bubble Box for YouTube Video -->
+        <div class="bubble-box">
+            <h2>Watch This</h2>
+            <iframe src="https://youtube.com/embed/VpGxn39lVWU?si=a2araLlelN8yjUyQ" 
+                title="YouTube video" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+            </iframe>
+        </div>
+    </div>
 </body>
 </html>
