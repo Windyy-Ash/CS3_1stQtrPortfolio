@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap'); 
+
+        body {
+            font-family: "Times New Roman", Times, serif;
+            background-image: url('https://upload-os-bbs.hoyolab.com/upload/2025/07/28/177283681/7579c42a466a83e3efda3da08c7ed854_6155961683494786055.jpg?x-oss-process=image%2Fresize%2Cs_1000%2Fauto-orient%2C0%2Finterlace%2C1%2Fformat%2Cwebp%2Fquality%2Cq_70'); 
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            margin: 0;
+            padding: 0;
+            color: rgb(68, 0, 255);
+        }
+
+        h1 {
+            text-align: center;
+            color: rgb(160, 77, 255); 
+            margin-top: 20px;
+            font-family: "Times New Roman", Times, serif;
+        }
+        h2 {
+            text-align: center;
+            color: rgb(160, 77, 255); 
+            margin-top: 20px;
+            font-family: "Times New Roman", Times, serif;
+        }
+
+        .container {
+            display: flex; 
+            justify-content: center;
+            align-items: flex-start;
+            gap: 20px; 
+            margin: 20px;
+        }
+
+        .bubble-box {
+            width: 20%; 
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8); 
+            border-radius: 20px; 
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+            text-align: center;
+        }
+
+        .bubble-box img {
+            max-width: 100%; 
+            border-radius: 20px; 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+        }
+
+        .bubble-box iframe {
+            width: 100%; 
+            height: 200px;
+            border-radius: 10px; 
+            box-shadow: 0 4px 8px rgba(130, 27, 255, 0.789); 
+        }
+
+        table {
+            width: 60%;
+            border-collapse: separate; 
+            border-spacing: 10px; 
+            background-color: rgba(255, 255, 255, 0.8); 
+            border-radius: 20px; 
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+            overflow: hidden;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: center;
+            border: 1px solid #1f068f;
+        }
+
+        th {
+            background-color: #260881;
+            color: #8d5dde;
+        }
