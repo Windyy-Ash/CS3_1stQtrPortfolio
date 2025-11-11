@@ -1,0 +1,17 @@
+<body>
+  <h1>Click anywhere!</h1>
+  <script>
+
+const bodyElement = document.body;
+    document.body.onclick = changeColor;
+
+function getRandomColor() {
+
+      return '#' + (Math.random() * 0xfffff * 1000000).toString(16).slice(0, 6);
+    }
+
+    function changeColor() {
+      document.body.style.backgroundColor = getRandomColor();
+    }
+  </script>
+</body>
