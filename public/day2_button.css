@@ -1,0 +1,14 @@
+.image-button {
+  width: 500px;
+  height: 120px;
+  border: none;
+  cursor: pointer;
+  background-image: url('../Images/freerobux.jpg');
+  background-size: cover;
+  background-position: center;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  margin-left: 35%;
+  color: white; 
+}

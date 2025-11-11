@@ -1,0 +1,36 @@
+
+body {
+ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+
+
+  background-image: url(https://wallpapers.com/images/hd/bts-purple-aesthetic-quote-f15davaezld9e7bl.jpg); 
+  background-size: cover;
+  background-position: upper;
+  background-repeat: no-repeat;
+  color: rgb(235, 235, 235); 
+}
+
+.card {
+  width: 200px;
+  padding: 1em;
+  border: 4px solid #560681;
+  border-radius: 10px;
+  text-align: center;
+  background-color: rgba(55, 0, 136, 0.6);
+  backdrop-filter: blur(5px); 
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5); 
+}
+
+.card:hover {
+  background-color: #eab5ff;
+  color: black; 
+}
+
+.emoji {
+  font-size: 3rem;
+}
